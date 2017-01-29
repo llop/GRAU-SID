@@ -1,0 +1,325 @@
+0. 
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX dbr: <http://dbpedia.org/resources/>
+PREFIX dbp: <http://dbpedia.org/property/>
+SELECT DISTINCT ?person ?birthDate ?occupation 
+WHERE {
+    VALUES ?birthDate { "1981-07-14"^^xsd:date }
+    ?person dbp:birthDate ?birthDate.
+    ?person dbp:occupation ?occupation.
+}
+
+
+
+1.
+
+PREFIX yago: <http://dbpedia.org/class/yago/> 
+SELECT DISTINCT *
+WHERE { 
+	?c a yago:CapitalsInEurope. 
+}
+ORDER BY ?c
+
+
+2.
+
+PREFIX yago: <http://dbpedia.org/class/yago/> 
+PREFIX dbp: <http://dbpedia.org/property/> 
+SELECT DISTINCT ?c ?nombre
+WHERE {
+	?c a yago:CapitalsInEurope.
+	?c dbp:name ?nombre. 
+}
+ORDER BY ?c
+
+
+
+3.
+
+PREFIX yago: <http://dbpedia.org/class/yago/> 
+PREFIX dbp: <http://dbpedia.org/property/> 
+SELECT DISTINCT ?c ?name
+WHERE {
+	?c a yago:CapitalsInEurope.
+	MINUS { ?c dbp:name ?name. }
+}
+ORDER BY ?c
+
+
+PREFIX yago: <http://dbpedia.org/class/yago/> 
+PREFIX dbp: <http://dbpedia.org/property/> 
+SELECT DISTINCT ?c
+WHERE {
+    ?c a yago:CapitalsInEurope.
+    FILTER NOT EXISTS { ?c dbp:name ?name. }
+}
+ORDER BY ?c
+
+
+
+
+4.
+
+PREFIX yago: <http://dbpedia.org/class/yago/> 
+PREFIX dbp: <http://dbpedia.org/property/> 
+SELECT DISTINCT ?c ?name ?nativeName
+WHERE {
+	?c a yago:CapitalsInEurope.
+	?c dbp:name ?name. 
+	?c dbp:nativeName ?nativeName.
+}
+ORDER BY ?c
+
+
+
+5.
+
+PREFIX yago: <http://dbpedia.org/class/yago/> 
+PREFIX dbp: <http://dbpedia.org/property/> 
+SELECT DISTINCT ?c ?name
+WHERE {
+	?c a yago:CapitalsInEurope.
+  OPTIONAL { ?c dbp:name ?name } 
+}
+ORDER BY ?c
+
+
+
+
+6.
+
+PREFIX yago: <http://dbpedia.org/class/yago/> 
+PREFIX dbp: <http://dbpedia.org/property/> 
+SELECT DISTINCT ?c ?name ?nativeName
+WHERE {
+	?c a yago:CapitalsInEurope.
+  OPTIONAL { ?c dbp:name ?name }
+  OPTIONAL { ?c dbp:nativeName ?nativeName } 
+}
+ORDER BY ?c
+
+
+
+7.
+
+PREFIX yago: <http://dbpedia.org/class/yago/> 
+PREFIX dbp: <http://dbpedia.org/property/> 
+SELECT DISTINCT ?c ?name ?nativeName
+WHERE {
+	?c a yago:CapitalsInEurope.
+  OPTIONAL { 
+		?c dbp:name ?name. 
+		?c dbp:nativeName ?nativeName 
+  } 
+}
+ORDER BY ?c
+
+
+
+8. 
+
+PREFIX yago: <http://dbpedia.org/class/yago/> 
+PREFIX dbp: <http://dbpedia.org/property/> 
+SELECT DISTINCT ?c ?name
+WHERE {
+	?c a yago:CapitalsInEurope.
+	?c dbp:name ?name. 
+  FILTER regex(?name, "e", "i")  # "i" -> case insensitive
+}
+ORDER BY ?c
+
+
+
+
+9.
+
+PREFIX yago: <http://dbpedia.org/class/yago/>
+PREFIX dbp: <http://dbpedia.org/property/>
+PREFIX dbo: <http://dbpedia.org/ontology/>
+SELECT DISTINCT ?c ?pop
+WHERE {
+	?c a yago:CapitalsInEurope.
+  ?c dbo:populationTotal ?pop.
+  FILTER (?pop >= 2000000)
+}
+ORDER BY ?pop
+
+
+
+10.
+
+PREFIX yago: <http://dbpedia.org/class/yago/>
+PREFIX dbp: <http://dbpedia.org/property/>
+PREFIX dbo: <http://dbpedia.org/ontology/>
+SELECT DISTINCT (CONCAT ("En ",?name," hay ",?pop," habitantes")) AS ?frase
+WHERE {
+	?c a yago:CapitalsInEurope.
+  ?c dbp:name ?name.
+  ?c dbo:populationTotal ?pop.
+  FILTER (?pop > 2000000)
+}
+ORDER BY ?pop
+
+
+
+11.
+
+PREFIX yago: <http://dbpedia.org/class/yago/>
+PREFIX dbp: <http://dbpedia.org/property/>
+PREFIX dbo: <http://dbpedia.org/ontology/>
+SELECT DISTINCT ?c ?name ?area
+WHERE {
+  ?c a yago:CapitalsInEurope.
+  ?c dbp:name ?name.
+  ?c dbo:areaTotal ?area.
+  FILTER (?area > 1000000000)
+}
+ORDER BY ?c
+
+
+
+12. 
+
+PREFIX yago: <http://dbpedia.org/class/yago/>
+PREFIX dbp: <http://dbpedia.org/property/>
+PREFIX dbo: <http://dbpedia.org/ontology/>
+SELECT DISTINCT ?c ?name ?area
+WHERE {
+  { ?c a yago:CapitalsInEurope.} UNION { ?c a yago:CapitalsInAsia.}
+  ?c dbp:name ?name.
+  ?c dbo:areaTotal ?area.
+  FILTER (?area > 1000000000)
+}
+ORDER BY ?c
+
+{ ?c a yago:CapitalsInEurope. } UNION { ?c a yago:CapitalsInAsia. }
+
+
+
+13.
+
+PREFIX yago: <http://dbpedia.org/class/yago/>
+PREFIX dbo: <http://dbpedia.org/ontology/>
+SELECT DISTINCT *
+WHERE {
+  {
+    ?c a yago:CapitalsInEurope.
+    ?c dbo:areaTotal ?area.
+    FILTER (?area > 1000000000).
+  }
+  UNION
+  {
+    ?lugar a yago:CapitalsInAsia.
+    ?lugar dbo:populationTotal ?pop.
+    FILTER (?pop > 10000000).
+  }
+}
+
+
+
+14.
+
+PREFIX yago: <http://dbpedia.org/class/yago/>
+PREFIX dbo: <http://dbpedia.org/ontology/>
+SELECT DISTINCT * 
+WHERE {
+  ?c a yago:CapitalsInEurope.
+  ?c dbo:populationTotal ?pop.
+  FILTER (?pop >= 2000000).
+  ?c dbo:country ?cou.
+  ?cou dbo:areaTotal ?are.
+  FILTER (?are < 500000000000).
+}
+
+
+
+
+18.
+
+PREFIX dbo: <http://dbpedia.org/ontology/>
+SELECT ?ganador (COUNT(?torneo) as ?veces)
+WHERE {
+  ?torneo dbo:championInSingleMale ?ganador.
+  ?torneo dbo:category <http://dbpedia.org/resource/Grand_Slam_(tennis)>.
+}
+GROUP BY ?ganador
+HAVING (COUNT(?torneo) > 5)
+ORDER BY DESC(?veces)
+
+
+
+
+
+
+
+water: masas de agua contaminada es una masa de agua que supere tal concentracion de 'mierda'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

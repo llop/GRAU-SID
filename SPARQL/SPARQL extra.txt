@@ -1,0 +1,19 @@
+Gente y ocupación de personas nacidas el 13 de Julio de 1942
+
+Ejercicios extraídos de la asignatura SISTEMAS BASADOS EN EL CONOCIMIENTO Grado en Ingeniería Informática de la Universidad Rey Juan Carlos:1. Capitales de Europa, ordenadas (http://dbpedia.org/class/yago/CapitalsInEurope)
+2. Capitales de Europa y su nombre, ordenadas (http://dbpedia.org/property/name)
+3. Capitales de Europa que no tienen nombre, ordenadas
+4. Capitales de Europa, su nombre y su nombre nativo, ordenadas (http://dbpedia.org/property/nativeName)
+5. Capitales de Europa y su nombre (si lo tienen), ordenadas
+6. Capitales de Europa, su nombre (si lo tienen) y su nombre nativo (si lo tienen), ordenadas
+7. Capitales de Europa y, si tienen ambos, su nombre y su nombre nativo
+8. Capitales europeas cuyo nombre contiene una “e”
+9. Capitales europeas y población de más de 2.000.000 habitantes, ordenados por no habitantes (de mayor a menor)(http://dbpedia.org/ontology/populationTotal)
+10. Para cada capital europea de más de 2 millones de habitantes mostrar un texto con el nombre y los habitantes. Por ejemplo: “En Madrid hay 3500000 habitantes”
+11. Capitales europeas con más de 1000 km2 (en m2) (http://dbpedia.org/ontology/areaTotal)
+12. Capitales europeas o asiáticas con más de 1000 km2 (en m2) (http://dbpedia.org/class/yago/CapitalsInAsia)
+13. Capitales europeas con más de 1000 km2 (en m2) y capitales de Asia con más de 10 millones de habitantes
+14. Capitales europeas y población de más de 2.000.000 habitantes, de países de menos de 500.000 km2 (en m2)(http://dbpedia.org/ontology/country)15. Actores de cine que están casados entre ellos, han participado en la misma película, y tal que uno de ellos ha nacido en un país cuya capital tiene más de 3 millones de habitantes, y el otro ha nacido en una ciudad que tiene un equipo en la NBA• dbpprop:spouse• dbpedia-owl:starring (pelicula – actor)• dbpedia-owl:birthPlace• dbpedia-owl:Country (clase)• dbpedia-owl:capital• dbpedia-owl:populationTotal• dbpprop:city (equipo - ciudad)• yago:NationalBasketballAssociationTeams
+16. Número de capitales europeas
+17. Número mínimo y máximo de habitantes de las capitales europeas
+18. Tenistas ganadores de más de cinco torneos Grand Slam (Roland Garros, Wimbledon, Open USA, Open Australia) indicando y ordenado por número de torneos ganados (mayor a menor)• dbpedia-owl:championInSingleMale (torneo – ganador)• dbpedia-owl:category <http://dbpedia.org/resource/Grand_Slam_(tennis)>
