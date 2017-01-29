@@ -1,0 +1,1830 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#"
+     xml:base="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:besosriver="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#AguaSucia -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#AguaSucia">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MasaDeAgua"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#AguaTramo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#AguaTramo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Tramo"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MasaDeAgua"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#DepuradoraAsignada -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#DepuradoraAsignada">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Ensuciadora"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Depuradora"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Fuente -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Fuente">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Rio"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Tramo"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#FuncIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#FuncIn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Metodos"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#FuncOut -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#FuncOut">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Metodos"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MasaDeAguaTanque -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MasaDeAguaTanque">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Tanque"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MasaDeAgua"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#SiguienteTramo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#SiguienteTramo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Tramo"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Tramo"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#TanqueProcesadora -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#TanqueProcesadora">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#ProcesadoresDeAgua"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Tanque"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#TramoDestino -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#TramoDestino">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Depuradora"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Tramo"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#TramoOrigen -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#TramoOrigen">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Ensuciadora"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Tramo"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Carbonatos -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Carbonatos">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Indicador"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#CarbonatosProcesadora -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#CarbonatosProcesadora">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#IndicadoresProcesadoras"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#ProcesadoresDeAgua"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#ContaminantesEmergentes -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#ContaminantesEmergentes">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Indicador"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#ContaminantesEmergentesProcesadora -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#ContaminantesEmergentesProcesadora">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#IndicadoresProcesadoras"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#ProcesadoresDeAgua"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#CosteDepuradora -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#CosteDepuradora">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Depuradora"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Coste en euros de limpiar 1 litro de agua al día</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#DBO -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#DBO">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Indicador"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#DBOProcesadora -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#DBOProcesadora">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#IndicadoresProcesadoras"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#ProcesadoresDeAgua"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#DQO -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#DQO">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Indicador"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#DQOProcesadora -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#DQOProcesadora">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#IndicadoresProcesadoras"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#ProcesadoresDeAgua"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Fosforo -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Fosforo">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Indicador"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#FosforoProcesadora -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#FosforoProcesadora">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#IndicadoresProcesadoras"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#ProcesadoresDeAgua"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#FuncName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#FuncName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Metodos"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Indicador -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Indicador">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MasaDeAgua"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#IndicadoresProcesadoras -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#IndicadoresProcesadoras">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#ProcesadoresDeAgua"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#NombreRio -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#NombreRio">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Rio"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Ph -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Ph">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Indicador"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#PhProcesadora -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#PhProcesadora">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#IndicadoresProcesadoras"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#ProcesadoresDeAgua"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#ResiduosHumanos -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#ResiduosHumanos">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Indicador"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#ResiduosHumanosProcesadora -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#ResiduosHumanosProcesadora">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#IndicadoresProcesadoras"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#ProcesadoresDeAgua"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Sal -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Sal">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Indicador"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#SalProcesadora -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#SalProcesadora">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#IndicadoresProcesadoras"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#ProcesadoresDeAgua"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#SolidosEnSuspension -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#SolidosEnSuspension">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Indicador"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#SolidosEnSuspensionProcesadora -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#SolidosEnSuspensionProcesadora">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#IndicadoresProcesadoras"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#ProcesadoresDeAgua"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#TramoID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#TramoID">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Tramo"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Volumen -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Volumen">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MasaDeAgua"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#VolumenProcesadora -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#VolumenProcesadora">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#ProcesadoresDeAgua"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#VolumenTanque -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#VolumenTanque">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Tanque"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Acida -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Acida">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MasaDeAgua"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Ph"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</xsd:minInclusive>
+                                    </rdf:Description>
+                                    <rdf:Description>
+                                        <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">7.0</xsd:maxExclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MasaDeAgua"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#AguaSuciaCiudad -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#AguaSuciaCiudad">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Metodos"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#AguaSuciaIndustria -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#AguaSuciaIndustria">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Metodos"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Alcalina -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Alcalina">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MasaDeAgua"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Ph"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">8.0</xsd:minInclusive>
+                                    </rdf:Description>
+                                    <rdf:Description>
+                                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">14.0</xsd:maxInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MasaDeAgua"/>
+        <rdfs:label xml:lang="es">Alcalina</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#AvanzaCursoRio -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#AvanzaCursoRio">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Metodos"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Blanda -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Blanda">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MasaDeAgua"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Carbonatos"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">17.0</xsd:maxInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MasaDeAgua"/>
+        <rdfs:label xml:lang="es">Blanda</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Ciudades -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Ciudades">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Ensuciadora"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#CosteLimpiarAguaDepuradora -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#CosteLimpiarAguaDepuradora">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Metodos"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Depuradora -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Depuradora">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#ProcesadoresDeAgua"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#TramoDestino"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Tramo"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#DiasLimpiarAguaDepuradora -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#DiasLimpiarAguaDepuradora">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Metodos"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Dulce -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Dulce">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MasaDeAgua"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Sal"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.5</xsd:maxExclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MasaDeAgua"/>
+        <rdfs:label xml:lang="es">Dulce</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Dura -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Dura">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MasaDeAgua"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Salada"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Carbonatos"/>
+                                <owl:someValuesFrom>
+                                    <rdfs:Datatype>
+                                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                                        <owl:withRestrictions rdf:parseType="Collection">
+                                            <rdf:Description>
+                                                <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">17.0</xsd:minExclusive>
+                                            </rdf:Description>
+                                        </owl:withRestrictions>
+                                    </rdfs:Datatype>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MasaDeAgua"/>
+        <rdfs:label xml:lang="es">Dura</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#EficienciaDepuradora -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#EficienciaDepuradora">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Metodos"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#EnsuciaAguas -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#EnsuciaAguas">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Metodos"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Ensuciadora -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Ensuciadora">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#ProcesadoresDeAgua"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#DepuradoraAsignada"/>
+                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Depuradora"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#TramoOrigen"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Tramo"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Grises -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Grises">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MasaDeAgua"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#DBO"/>
+                                <owl:someValuesFrom>
+                                    <rdfs:Datatype>
+                                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                                        <owl:withRestrictions rdf:parseType="Collection">
+                                            <rdf:Description>
+                                                <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</xsd:minExclusive>
+                                            </rdf:Description>
+                                        </owl:withRestrictions>
+                                    </rdfs:Datatype>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#DQO"/>
+                                <owl:someValuesFrom>
+                                    <rdfs:Datatype>
+                                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                                        <owl:withRestrictions rdf:parseType="Collection">
+                                            <rdf:Description>
+                                                <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</xsd:minExclusive>
+                                            </rdf:Description>
+                                        </owl:withRestrictions>
+                                    </rdfs:Datatype>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MasaDeAgua"/>
+        <rdfs:label xml:lang="es">Grises</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Industria -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Industria">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Ensuciadora"/>
+        <rdfs:label xml:lang="es">Industria</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#LimpiaAguas -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#LimpiaAguas">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Metodos"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#LlenarTanques -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#LlenarTanques">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Metodos"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Maderera -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Maderera">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Industria"/>
+        <rdfs:label xml:lang="es">Maderera</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MasaDeAgua -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MasaDeAgua">
+        <rdfs:label xml:lang="es">MasaDeAgua</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Metodos -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Metodos">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#FuncIn"/>
+                        <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#FuncOut"/>
+                        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#FuncName"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MezclaAguas -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MezclaAguas">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Metodos"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Negras -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Negras">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MasaDeAgua"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#ResiduosHumanos"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MasaDeAgua"/>
+        <rdfs:label xml:lang="es">Negras</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#NeutralPh -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#NeutralPh">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MasaDeAgua"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Ph"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">7.0</xsd:minInclusive>
+                                    </rdf:Description>
+                                    <rdf:Description>
+                                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">7.0</xsd:maxInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MasaDeAgua"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Ovina -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Ovina">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Industria"/>
+        <rdfs:label xml:lang="es">Ovina</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Porcina -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Porcina">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Industria"/>
+        <rdfs:label xml:lang="es">Porcina</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Potable -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Potable">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Blanda"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Dulce"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MasaDeAgua"/>
+                    <owl:Class>
+                        <owl:complementOf rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Grises"/>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:complementOf rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Negras"/>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Ph"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">6.5</xsd:minExclusive>
+                                    </rdf:Description>
+                                    <rdf:Description>
+                                        <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">9.5</xsd:maxExclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MasaDeAgua"/>
+        <rdfs:label xml:lang="es">Potable</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#ProcesadoresDeAgua -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#ProcesadoresDeAgua">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#TanqueProcesadora"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Tanque"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Rio -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Rio">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Fuente"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Tramo"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Salada -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Salada">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MasaDeAgua"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Sal"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">35.0</xsd:minExclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MasaDeAgua"/>
+        <rdfs:label xml:lang="es">Salada</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Salobre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Salobre">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MasaDeAgua"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Sal"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.5</xsd:minInclusive>
+                                    </rdf:Description>
+                                    <rdf:Description>
+                                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">35.0</xsd:maxInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MasaDeAgua"/>
+        <rdfs:label xml:lang="es">Salobre</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Tanque -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Tanque"/>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Tramo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Tramo">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#AguaTramo"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MasaDeAgua"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#SiguienteTramo"/>
+                        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Tramo"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#VaciarTanques -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#VaciarTanques">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Metodos"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#AguaDura -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#AguaDura">
+        <Carbonatos rdf:datatype="http://www.w3.org/2001/XMLSchema#float">500.0</Carbonatos>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#AguaSuciaCiudadMucho -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#AguaSuciaCiudadMucho">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#AguaSuciaCiudad"/>
+        <FuncName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">aguaSuciaCiudadMucho</FuncName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#AguaSuciaCiudadNormal -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#AguaSuciaCiudadNormal">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#AguaSuciaCiudad"/>
+        <FuncName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">aguaSuciaCiudadNormal</FuncName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#AguaSuciaIndustriaMucho -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#AguaSuciaIndustriaMucho">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#AguaSuciaIndustria"/>
+        <FuncName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">aguaSuciaIndustriaMucho</FuncName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#AguaSuciaIndustriaNormal -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#AguaSuciaIndustriaNormal">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#AguaSuciaIndustria"/>
+        <FuncName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">aguaSuciaIndustriaNormal</FuncName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Barcelona -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Barcelona">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Ciudades"/>
+        <DepuradoraAsignada rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#DepuradoraBarcelona"/>
+        <TramoOrigen rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Tramo7"/>
+        <CarbonatosProcesadora rdf:datatype="http://www.w3.org/2001/XMLSchema#float">10.0</CarbonatosProcesadora>
+        <ContaminantesEmergentesProcesadora rdf:datatype="http://www.w3.org/2001/XMLSchema#float">20.0</ContaminantesEmergentesProcesadora>
+        <DBOProcesadora rdf:datatype="http://www.w3.org/2001/XMLSchema#float">15.0</DBOProcesadora>
+        <DQOProcesadora rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.0</DQOProcesadora>
+        <FosforoProcesadora rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.0</FosforoProcesadora>
+        <PhProcesadora rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.0</PhProcesadora>
+        <ResiduosHumanosProcesadora rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ResiduosHumanosProcesadora>
+        <SalProcesadora rdf:datatype="http://www.w3.org/2001/XMLSchema#float">9.0</SalProcesadora>
+        <SolidosEnSuspensionProcesadora rdf:datatype="http://www.w3.org/2001/XMLSchema#float">7.0</SolidosEnSuspensionProcesadora>
+        <VolumenProcesadora rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2000000.0</VolumenProcesadora>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#DefaultAvanzaCursoRio -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#DefaultAvanzaCursoRio">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#AvanzaCursoRio"/>
+        <FuncName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">avanzaCursoAgua</FuncName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#DefaultCosteLimpiarAguaDepuradora -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#DefaultCosteLimpiarAguaDepuradora">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#CosteLimpiarAguaDepuradora"/>
+        <FuncName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">costeLimpiarAgua</FuncName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#DefaultDiasLimpiarAguaDepuradora -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#DefaultDiasLimpiarAguaDepuradora">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#DiasLimpiarAguaDepuradora"/>
+        <FuncName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diasLimpiarAgua</FuncName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#DefaultEficienciaDepuradora -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#DefaultEficienciaDepuradora">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#EficienciaDepuradora"/>
+        <FuncName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">calcularEficiencia</FuncName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#DefaultEnsuciaAguas -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#DefaultEnsuciaAguas">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#EnsuciaAguas"/>
+        <FuncName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ensuciarAgua</FuncName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#DefaultLimpiaAguas -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#DefaultLimpiaAguas">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#LimpiaAguas"/>
+        <FuncName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">limpiarAgua</FuncName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#DefaultLlenarTanques -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#DefaultLlenarTanques">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#LlenarTanques"/>
+        <FuncName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">llenarTanques</FuncName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#DefaultMezclaAguas -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#DefaultMezclaAguas">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MezclaAguas"/>
+        <FuncName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mezclaAguas</FuncName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#DefaultVaciarTanques -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#DefaultVaciarTanques">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#VaciarTanques"/>
+        <FuncName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vaciarTanques</FuncName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#DepuradoraBarcelona -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#DepuradoraBarcelona">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Depuradora"/>
+        <TanqueProcesadora rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Tanque1DeBarcelona"/>
+        <TanqueProcesadora rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Tanque2DeBarcelona"/>
+        <TanqueProcesadora rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Tanque3DeBarcelona"/>
+        <TramoDestino rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Tramo8"/>
+        <CarbonatosProcesadora rdf:datatype="http://www.w3.org/2001/XMLSchema#float">10.0</CarbonatosProcesadora>
+        <ContaminantesEmergentesProcesadora rdf:datatype="http://www.w3.org/2001/XMLSchema#float">20.0</ContaminantesEmergentesProcesadora>
+        <CosteDepuradora rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.0</CosteDepuradora>
+        <DBOProcesadora rdf:datatype="http://www.w3.org/2001/XMLSchema#float">15.0</DBOProcesadora>
+        <DQOProcesadora rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.0</DQOProcesadora>
+        <FosforoProcesadora rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.0</FosforoProcesadora>
+        <PhProcesadora rdf:datatype="http://www.w3.org/2001/XMLSchema#float">7.0</PhProcesadora>
+        <ResiduosHumanosProcesadora rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ResiduosHumanosProcesadora>
+        <SalProcesadora rdf:datatype="http://www.w3.org/2001/XMLSchema#float">9.0</SalProcesadora>
+        <SolidosEnSuspensionProcesadora rdf:datatype="http://www.w3.org/2001/XMLSchema#float">7.0</SolidosEnSuspensionProcesadora>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#DepuradoraDelValles -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#DepuradoraDelValles">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Depuradora"/>
+        <TanqueProcesadora rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Tanque1DelValles"/>
+        <TanqueProcesadora rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Tanque2DelValles"/>
+        <TramoDestino rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Tramo3"/>
+        <CarbonatosProcesadora rdf:datatype="http://www.w3.org/2001/XMLSchema#float">10.0</CarbonatosProcesadora>
+        <ContaminantesEmergentesProcesadora rdf:datatype="http://www.w3.org/2001/XMLSchema#float">20.0</ContaminantesEmergentesProcesadora>
+        <CosteDepuradora rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.5</CosteDepuradora>
+        <DBOProcesadora rdf:datatype="http://www.w3.org/2001/XMLSchema#float">15.0</DBOProcesadora>
+        <DQOProcesadora rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.0</DQOProcesadora>
+        <FosforoProcesadora rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.0</FosforoProcesadora>
+        <PhProcesadora rdf:datatype="http://www.w3.org/2001/XMLSchema#float">7.0</PhProcesadora>
+        <ResiduosHumanosProcesadora rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ResiduosHumanosProcesadora>
+        <SalProcesadora rdf:datatype="http://www.w3.org/2001/XMLSchema#float">9.0</SalProcesadora>
+        <SolidosEnSuspensionProcesadora rdf:datatype="http://www.w3.org/2001/XMLSchema#float">7.0</SolidosEnSuspensionProcesadora>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MadereraDelBesos -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MadereraDelBesos">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Maderera"/>
+        <DepuradoraAsignada rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#DepuradoraBarcelona"/>
+        <DepuradoraAsignada rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#DepuradoraDelValles"/>
+        <TanqueProcesadora rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Tanque1DeMadereraDelBesos"/>
+        <TramoOrigen rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Tramo0"/>
+        <CarbonatosProcesadora rdf:datatype="http://www.w3.org/2001/XMLSchema#float">10.0</CarbonatosProcesadora>
+        <ContaminantesEmergentesProcesadora rdf:datatype="http://www.w3.org/2001/XMLSchema#float">20.0</ContaminantesEmergentesProcesadora>
+        <DBOProcesadora rdf:datatype="http://www.w3.org/2001/XMLSchema#float">15.0</DBOProcesadora>
+        <DQOProcesadora rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.0</DQOProcesadora>
+        <FosforoProcesadora rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.0</FosforoProcesadora>
+        <PhProcesadora rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.0</PhProcesadora>
+        <ResiduosHumanosProcesadora rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ResiduosHumanosProcesadora>
+        <SalProcesadora rdf:datatype="http://www.w3.org/2001/XMLSchema#float">9.0</SalProcesadora>
+        <SolidosEnSuspensionProcesadora rdf:datatype="http://www.w3.org/2001/XMLSchema#float">7.0</SolidosEnSuspensionProcesadora>
+        <VolumenProcesadora rdf:datatype="http://www.w3.org/2001/XMLSchema#float">500000.0</VolumenProcesadora>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MasaDeAgua1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MasaDeAgua1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MasaDeAgua"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MasaDeAgua2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MasaDeAgua2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MasaDeAgua"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MasaDeAguaAlcalina8 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MasaDeAguaAlcalina8">
+        <Ph rdf:datatype="http://www.w3.org/2001/XMLSchema#float">8.0</Ph>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MasaDeAguaBlanda -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MasaDeAguaBlanda">
+        <Carbonatos rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.0</Carbonatos>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MasaDeAguaDulce -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MasaDeAguaDulce">
+        <Carbonatos rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</Carbonatos>
+        <ContaminantesEmergentes rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</ContaminantesEmergentes>
+        <DBO rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.1</DBO>
+        <DQO rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.1</DQO>
+        <Fosforo rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.1</Fosforo>
+        <Ph rdf:datatype="http://www.w3.org/2001/XMLSchema#float">7.0</Ph>
+        <ResiduosHumanos rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ResiduosHumanos>
+        <Sal rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.1</Sal>
+        <SolidosEnSuspension rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.5</SolidosEnSuspension>
+        <Volumen rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.0E7</Volumen>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MasaDeAguaDura1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MasaDeAguaDura1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Dura"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MasaDeAguaInicial0 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MasaDeAguaInicial0">
+        <Carbonatos rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</Carbonatos>
+        <ContaminantesEmergentes rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</ContaminantesEmergentes>
+        <DBO rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.1</DBO>
+        <DQO rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.1</DQO>
+        <Fosforo rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.1</Fosforo>
+        <Ph rdf:datatype="http://www.w3.org/2001/XMLSchema#float">7.0</Ph>
+        <ResiduosHumanos rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ResiduosHumanos>
+        <Sal rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.1</Sal>
+        <SolidosEnSuspension rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.5</SolidosEnSuspension>
+        <Volumen rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.0E7</Volumen>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MasaDeAguaInicial1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MasaDeAguaInicial1">
+        <Carbonatos rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</Carbonatos>
+        <ContaminantesEmergentes rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</ContaminantesEmergentes>
+        <DBO rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.1</DBO>
+        <DQO rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.1</DQO>
+        <Fosforo rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.1</Fosforo>
+        <Ph rdf:datatype="http://www.w3.org/2001/XMLSchema#float">7.0</Ph>
+        <ResiduosHumanos rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ResiduosHumanos>
+        <Sal rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.1</Sal>
+        <SolidosEnSuspension rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.5</SolidosEnSuspension>
+        <Volumen rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.0E7</Volumen>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MasaDeAguaInicial2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MasaDeAguaInicial2">
+        <Carbonatos rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</Carbonatos>
+        <ContaminantesEmergentes rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</ContaminantesEmergentes>
+        <DBO rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.1</DBO>
+        <DQO rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.1</DQO>
+        <Fosforo rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.1</Fosforo>
+        <Ph rdf:datatype="http://www.w3.org/2001/XMLSchema#float">7.0</Ph>
+        <ResiduosHumanos rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ResiduosHumanos>
+        <Sal rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.1</Sal>
+        <SolidosEnSuspension rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.5</SolidosEnSuspension>
+        <Volumen rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.0E7</Volumen>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MasaDeAguaInicial3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MasaDeAguaInicial3">
+        <Carbonatos rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</Carbonatos>
+        <ContaminantesEmergentes rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</ContaminantesEmergentes>
+        <DBO rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.1</DBO>
+        <DQO rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.1</DQO>
+        <Fosforo rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.1</Fosforo>
+        <Ph rdf:datatype="http://www.w3.org/2001/XMLSchema#float">7.0</Ph>
+        <ResiduosHumanos rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ResiduosHumanos>
+        <Sal rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.1</Sal>
+        <SolidosEnSuspension rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.5</SolidosEnSuspension>
+        <Volumen rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.0E7</Volumen>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MasaDeAguaInicial4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MasaDeAguaInicial4">
+        <Carbonatos rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</Carbonatos>
+        <ContaminantesEmergentes rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</ContaminantesEmergentes>
+        <DBO rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.1</DBO>
+        <DQO rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.1</DQO>
+        <Fosforo rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.1</Fosforo>
+        <Ph rdf:datatype="http://www.w3.org/2001/XMLSchema#float">7.0</Ph>
+        <ResiduosHumanos rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ResiduosHumanos>
+        <Sal rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.1</Sal>
+        <SolidosEnSuspension rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.5</SolidosEnSuspension>
+        <Volumen rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.0E7</Volumen>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MasaDeAguaInicial5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MasaDeAguaInicial5">
+        <Carbonatos rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</Carbonatos>
+        <ContaminantesEmergentes rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</ContaminantesEmergentes>
+        <DBO rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.1</DBO>
+        <DQO rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.1</DQO>
+        <Fosforo rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.1</Fosforo>
+        <Ph rdf:datatype="http://www.w3.org/2001/XMLSchema#float">7.0</Ph>
+        <ResiduosHumanos rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ResiduosHumanos>
+        <Sal rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.1</Sal>
+        <SolidosEnSuspension rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.5</SolidosEnSuspension>
+        <Volumen rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.0E7</Volumen>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MasaDeAguaInicial6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MasaDeAguaInicial6">
+        <Carbonatos rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</Carbonatos>
+        <ContaminantesEmergentes rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</ContaminantesEmergentes>
+        <DBO rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.1</DBO>
+        <DQO rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.1</DQO>
+        <Fosforo rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.1</Fosforo>
+        <Ph rdf:datatype="http://www.w3.org/2001/XMLSchema#float">7.0</Ph>
+        <ResiduosHumanos rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ResiduosHumanos>
+        <Sal rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.1</Sal>
+        <SolidosEnSuspension rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.5</SolidosEnSuspension>
+        <Volumen rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.0E7</Volumen>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MasaDeAguaInicial7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MasaDeAguaInicial7">
+        <Carbonatos rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</Carbonatos>
+        <ContaminantesEmergentes rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</ContaminantesEmergentes>
+        <DBO rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.1</DBO>
+        <DQO rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.1</DQO>
+        <Fosforo rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.1</Fosforo>
+        <Ph rdf:datatype="http://www.w3.org/2001/XMLSchema#float">7.0</Ph>
+        <ResiduosHumanos rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ResiduosHumanos>
+        <Sal rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.1</Sal>
+        <SolidosEnSuspension rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.5</SolidosEnSuspension>
+        <Volumen rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.0E7</Volumen>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MasaDeAguaInicial8 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MasaDeAguaInicial8">
+        <Carbonatos rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</Carbonatos>
+        <ContaminantesEmergentes rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</ContaminantesEmergentes>
+        <DBO rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.1</DBO>
+        <DQO rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.1</DQO>
+        <Fosforo rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.1</Fosforo>
+        <Ph rdf:datatype="http://www.w3.org/2001/XMLSchema#float">7.0</Ph>
+        <ResiduosHumanos rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ResiduosHumanos>
+        <Sal rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.1</Sal>
+        <SolidosEnSuspension rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.5</SolidosEnSuspension>
+        <Volumen rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.0E7</Volumen>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MasaDeAguaInicial9 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MasaDeAguaInicial9">
+        <Carbonatos rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</Carbonatos>
+        <ContaminantesEmergentes rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</ContaminantesEmergentes>
+        <DBO rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.1</DBO>
+        <DQO rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.1</DQO>
+        <Fosforo rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.1</Fosforo>
+        <Ph rdf:datatype="http://www.w3.org/2001/XMLSchema#float">7.0</Ph>
+        <ResiduosHumanos rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ResiduosHumanos>
+        <Sal rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.1</Sal>
+        <SolidosEnSuspension rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.5</SolidosEnSuspension>
+        <Volumen rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.0E7</Volumen>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MasaDeAguaNegra -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MasaDeAguaNegra">
+        <ResiduosHumanos rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ResiduosHumanos>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MasaDeAguaNegra1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MasaDeAguaNegra1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Negras"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MasaDeAguaNeutral -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MasaDeAguaNeutral">
+        <Ph rdf:datatype="http://www.w3.org/2001/XMLSchema#float">7.0</Ph>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MasaDeAguaNoAlcalina3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MasaDeAguaNoAlcalina3">
+        <Ph rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.0</Ph>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MasaDeAguaPotable -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MasaDeAguaPotable">
+        <Carbonatos rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</Carbonatos>
+        <Ph rdf:datatype="http://www.w3.org/2001/XMLSchema#float">7.0</Ph>
+        <Sal rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.1</Sal>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MasaDeAguaSalada -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MasaDeAguaSalada">
+        <Sal rdf:datatype="http://www.w3.org/2001/XMLSchema#float">200.0</Sal>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MasaDeAguaSaladaYDura -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MasaDeAguaSaladaYDura">
+        <Sal rdf:datatype="http://www.w3.org/2001/XMLSchema#float">300.0</Sal>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MasaDeAguaSalobre -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MasaDeAguaSalobre">
+        <Sal rdf:datatype="http://www.w3.org/2001/XMLSchema#float">7.0</Sal>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MasaDeAguaVacia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MasaDeAguaVacia">
+        <Carbonatos rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</Carbonatos>
+        <ContaminantesEmergentes rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</ContaminantesEmergentes>
+        <DBO rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</DBO>
+        <DQO rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</DQO>
+        <Fosforo rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</Fosforo>
+        <Ph rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</Ph>
+        <ResiduosHumanos rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ResiduosHumanos>
+        <Sal rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</Sal>
+        <SolidosEnSuspension rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</SolidosEnSuspension>
+        <Volumen rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</Volumen>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MollesDelValles -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MollesDelValles">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Ciudades"/>
+        <DepuradoraAsignada rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#DepuradoraBarcelona"/>
+        <DepuradoraAsignada rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#DepuradoraDelValles"/>
+        <TramoOrigen rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Tramo1"/>
+        <CarbonatosProcesadora rdf:datatype="http://www.w3.org/2001/XMLSchema#float">10.0</CarbonatosProcesadora>
+        <ContaminantesEmergentesProcesadora rdf:datatype="http://www.w3.org/2001/XMLSchema#float">20.0</ContaminantesEmergentesProcesadora>
+        <DBOProcesadora rdf:datatype="http://www.w3.org/2001/XMLSchema#float">15.0</DBOProcesadora>
+        <DQOProcesadora rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.0</DQOProcesadora>
+        <FosforoProcesadora rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.0</FosforoProcesadora>
+        <PhProcesadora rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.0</PhProcesadora>
+        <ResiduosHumanosProcesadora rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ResiduosHumanosProcesadora>
+        <SalProcesadora rdf:datatype="http://www.w3.org/2001/XMLSchema#float">9.0</SalProcesadora>
+        <SolidosEnSuspensionProcesadora rdf:datatype="http://www.w3.org/2001/XMLSchema#float">7.0</SolidosEnSuspensionProcesadora>
+        <VolumenProcesadora rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1000000.0</VolumenProcesadora>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#OvinasDelValles -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#OvinasDelValles">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Ovina"/>
+        <DepuradoraAsignada rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#DepuradoraBarcelona"/>
+        <DepuradoraAsignada rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#DepuradoraDelValles"/>
+        <TramoOrigen rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Tramo2"/>
+        <CarbonatosProcesadora rdf:datatype="http://www.w3.org/2001/XMLSchema#float">10.0</CarbonatosProcesadora>
+        <ContaminantesEmergentesProcesadora rdf:datatype="http://www.w3.org/2001/XMLSchema#float">20.0</ContaminantesEmergentesProcesadora>
+        <DBOProcesadora rdf:datatype="http://www.w3.org/2001/XMLSchema#float">15.0</DBOProcesadora>
+        <DQOProcesadora rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.0</DQOProcesadora>
+        <FosforoProcesadora rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.0</FosforoProcesadora>
+        <PhProcesadora rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.0</PhProcesadora>
+        <ResiduosHumanosProcesadora rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ResiduosHumanosProcesadora>
+        <SalProcesadora rdf:datatype="http://www.w3.org/2001/XMLSchema#float">9.0</SalProcesadora>
+        <SolidosEnSuspensionProcesadora rdf:datatype="http://www.w3.org/2001/XMLSchema#float">7.0</SolidosEnSuspensionProcesadora>
+        <VolumenProcesadora rdf:datatype="http://www.w3.org/2001/XMLSchema#float">400000.0</VolumenProcesadora>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#PorcinasDelValles -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#PorcinasDelValles">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Porcina"/>
+        <DepuradoraAsignada rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#DepuradoraBarcelona"/>
+        <TramoOrigen rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Tramo5"/>
+        <CarbonatosProcesadora rdf:datatype="http://www.w3.org/2001/XMLSchema#float">10.0</CarbonatosProcesadora>
+        <ContaminantesEmergentesProcesadora rdf:datatype="http://www.w3.org/2001/XMLSchema#float">20.0</ContaminantesEmergentesProcesadora>
+        <DBOProcesadora rdf:datatype="http://www.w3.org/2001/XMLSchema#float">15.0</DBOProcesadora>
+        <DQOProcesadora rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.0</DQOProcesadora>
+        <FosforoProcesadora rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.0</FosforoProcesadora>
+        <PhProcesadora rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.0</PhProcesadora>
+        <ResiduosHumanosProcesadora rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ResiduosHumanosProcesadora>
+        <SalProcesadora rdf:datatype="http://www.w3.org/2001/XMLSchema#float">9.0</SalProcesadora>
+        <SolidosEnSuspensionProcesadora rdf:datatype="http://www.w3.org/2001/XMLSchema#float">7.0</SolidosEnSuspensionProcesadora>
+        <VolumenProcesadora rdf:datatype="http://www.w3.org/2001/XMLSchema#float">600000.0</VolumenProcesadora>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#RioBesos -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#RioBesos">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Rio"/>
+        <Fuente rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Tramo0"/>
+        <NombreRio rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Besos</NombreRio>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Tanque1DeBarcelona -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Tanque1DeBarcelona">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Tanque"/>
+        <VolumenTanque rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1000000.0</VolumenTanque>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Tanque1DeMadereraDelBesos -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Tanque1DeMadereraDelBesos">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Tanque"/>
+        <VolumenTanque rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3000000.0</VolumenTanque>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Tanque1DelValles -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Tanque1DelValles">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Tanque"/>
+        <VolumenTanque rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2000000.0</VolumenTanque>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Tanque2DeBarcelona -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Tanque2DeBarcelona">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Tanque"/>
+        <VolumenTanque rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4000000.0</VolumenTanque>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Tanque2DelValles -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Tanque2DelValles">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Tanque"/>
+        <VolumenTanque rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5000000.0</VolumenTanque>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Tanque3DeBarcelona -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Tanque3DeBarcelona">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Tanque"/>
+        <VolumenTanque rdf:datatype="http://www.w3.org/2001/XMLSchema#float">6000000.0</VolumenTanque>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Tramo0 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Tramo0">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Tramo"/>
+        <AguaTramo rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MasaDeAguaInicial0"/>
+        <SiguienteTramo rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Tramo1"/>
+        <TramoID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</TramoID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Tramo1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Tramo1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Tramo"/>
+        <AguaTramo rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MasaDeAguaInicial1"/>
+        <SiguienteTramo rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Tramo2"/>
+        <TramoID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</TramoID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Tramo2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Tramo2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Tramo"/>
+        <AguaTramo rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MasaDeAguaInicial2"/>
+        <SiguienteTramo rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Tramo3"/>
+        <TramoID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</TramoID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Tramo3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Tramo3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Tramo"/>
+        <AguaTramo rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MasaDeAguaInicial3"/>
+        <SiguienteTramo rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Tramo4"/>
+        <TramoID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</TramoID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Tramo4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Tramo4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Tramo"/>
+        <AguaTramo rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MasaDeAguaInicial4"/>
+        <SiguienteTramo rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Tramo5"/>
+        <TramoID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4</TramoID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Tramo5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Tramo5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Tramo"/>
+        <AguaTramo rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MasaDeAguaInicial5"/>
+        <SiguienteTramo rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Tramo6"/>
+        <TramoID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">5</TramoID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Tramo6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Tramo6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Tramo"/>
+        <AguaTramo rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MasaDeAguaInicial6"/>
+        <SiguienteTramo rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Tramo7"/>
+        <TramoID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">6</TramoID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Tramo7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Tramo7">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Tramo"/>
+        <AguaTramo rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MasaDeAguaInicial7"/>
+        <SiguienteTramo rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Tramo8"/>
+        <TramoID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">7</TramoID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Tramo8 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Tramo8">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Tramo"/>
+        <AguaTramo rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MasaDeAguaInicial8"/>
+        <SiguienteTramo rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Tramo9"/>
+        <TramoID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">8</TramoID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Tramo9 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Tramo9">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Tramo"/>
+        <AguaTramo rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MasaDeAguaInicial9"/>
+        <TramoID rdf:datatype="http://www.w3.org/2001/XMLSchema#int">9</TramoID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MasaDeAgua"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Metodos"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#ProcesadoresDeAgua"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Rio"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Tanque"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Tramo"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointProperties"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#AguaSucia"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#AguaTramo"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#DepuradoraAsignada"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Fuente"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#FuncIn"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#FuncOut"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#SiguienteTramo"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#TramoDestino"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#TramoOrigen"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointProperties"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#FuncName"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#IndicadoresProcesadoras"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#NombreRio"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#TramoID"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Volumen"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#VolumenProcesadora"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#VolumenTanque"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.1.3.20151118-2017) https://github.com/owlcs/owlapi -->
+

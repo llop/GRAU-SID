@@ -1,0 +1,357 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#"
+     xml:base="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Acida -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Acida">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MasaDeAgua"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Alcalina"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Industria"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Maderera"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Ovina"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Porcina"/>
+        <owl:disjointWith rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Alcalina -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Alcalina">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MasaDeAgua"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Industria"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Maderera"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#NeutralPh"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Ovina"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Porcina"/>
+        <owl:disjointWith rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Blanda -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Blanda">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MasaDeAgua"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Industria"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Maderera"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Ovina"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Porcina"/>
+        <owl:disjointWith rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Dulce -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Dulce">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MasaDeAgua"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Industria"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Maderera"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Ovina"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Porcina"/>
+        <owl:disjointWith rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Dura -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Dura">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MasaDeAgua"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Industria"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Maderera"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Ovina"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Porcina"/>
+        <owl:disjointWith rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Grises -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Grises">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MasaDeAgua"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Industria"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Maderera"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Ovina"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Porcina"/>
+        <owl:disjointWith rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Industria -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Industria">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MasaDeAgua"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Metodos"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MezclaAguas"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Negras"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#NeutralPh"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Potable"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Salada"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Salobre"/>
+        <owl:disjointWith rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Maderera -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Maderera">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Industria"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MasaDeAgua"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Metodos"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MezclaAguas"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Negras"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#NeutralPh"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Potable"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Salada"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Salobre"/>
+        <owl:disjointWith rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MasaDeAgua -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MasaDeAgua">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Ovina"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Porcina"/>
+        <owl:disjointWith rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Metodos -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Metodos">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Ovina"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Porcina"/>
+        <owl:disjointWith rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MezclaAguas -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MezclaAguas">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Metodos"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Ovina"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Porcina"/>
+        <owl:disjointWith rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Negras -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Negras">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MasaDeAgua"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Ovina"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Porcina"/>
+        <owl:disjointWith rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#NeutralPh -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#NeutralPh">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Acida"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Ovina"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Porcina"/>
+        <owl:disjointWith rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Ovina -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Ovina">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Industria"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Potable"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Salada"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Salobre"/>
+        <owl:disjointWith rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Porcina -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Porcina">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Industria"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Potable"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Salada"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Salobre"/>
+        <owl:disjointWith rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Potable -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Potable">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MasaDeAgua"/>
+        <owl:disjointWith rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Salada -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Salada">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MasaDeAgua"/>
+        <owl:disjointWith rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Salobre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Salobre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MasaDeAgua"/>
+        <owl:disjointWith rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#Nothing -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Nothing">
+        <owl:disjointWith rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#Thing -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#DefaultMezclaAguas -->
+
+    <owl:Thing rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#DefaultMezclaAguas">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Metodos"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MezclaAguas"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MadereraDelBesos -->
+
+    <owl:Thing rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MadereraDelBesos">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Industria"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Maderera"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MasaDeAgua1 -->
+
+    <owl:Thing rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MasaDeAgua1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MasaDeAgua"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MasaDeAgua2 -->
+
+    <owl:Thing rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MasaDeAgua2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MasaDeAgua"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MasaDeAguaAlcalina8 -->
+
+    <owl:Thing rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MasaDeAguaAlcalina8">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MasaDeAgua"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MasaDeAguaDura1 -->
+
+    <owl:Thing rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MasaDeAguaDura1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Dura"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MasaDeAgua"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MasaDeAguaNegra1 -->
+
+    <owl:Thing rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MasaDeAguaNegra1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MasaDeAgua"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Negras"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MasaDeAguaNeutral -->
+
+    <owl:Thing rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MasaDeAguaNeutral">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Acida"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MasaDeAgua"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#NeutralPh"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MasaDeAguaNoAlcalina3 -->
+
+    <owl:Thing rdf:about="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MasaDeAguaNoAlcalina3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#Acida"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/pacific/ontologies/2016/4/besosriver#MasaDeAgua"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    </owl:Thing>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.10-SNAPSHOT) http://owlapi.sourceforge.net -->
+
