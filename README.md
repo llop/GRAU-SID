@@ -5,5 +5,6 @@
 * Ejercicios SPARQL
 
 * Proyecto de laboratorio: **Besòs River**
+  
   Sistema inteligente que simula el curso de un río con ciudades, industrias y depuradoras
 
